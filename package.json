@@ -1,0 +1,11 @@
+{
+  "name": "news-carousel",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "^4.15.4",
+    "feedly": "^0.1.6",
+    "swiper": "^3.4.2"
+  },
+  "devDependencies": {
+  }
+}

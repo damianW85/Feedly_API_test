@@ -1,0 +1,134 @@
+html, body {
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  background-color:#000;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  margin:0;
+  width: 450px;
+  height: 800px;
+}
+
+
+img{
+  z-index:-1;
+  position:absolute;
+  left:0;
+  top:0;
+  height:100vh;
+  width:100%;
+  display:block;
+}
+
+h1{
+  position:absolute;
+  bottom:30px;
+  padding-left:3%;
+  padding-right:10%;
+  font-size: 3rem!important;
+  color:#fff;
+  font-weight:100;
+}
+
+@keyframes fade {
+ 0%{
+   opacity:0;
+ }
+
+ 100%{
+   opacity:1;
+ }
+
+}
+
+p{
+  position:absolute;
+  bottom:20px;
+  color:#009FE7;
+  text-transform:uppercase;
+  font-size: 0.5em!important;
+  font-weight:700!important;
+  padding-left: 3%;
+}
+
+i{
+  bottom:300px;
+  width: 90%;
+  overflow: ellipsis;
+  height:50px;
+  position: absolute;
+  box-sizing: border-box;
+  padding-left:3%;
+}
+
+h2{
+  position: relative;
+  color:#fff;
+  font-size:1em;
+  font-weight: 100;
+}
+
+
+
+a {
+  position:relative;
+  text-decoration: none;
+}
+
+#aylien-output {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#results {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+  // display: flex;
+  // transition: transform 2s ease-in-out;
+}
+
+.story {
+  background-size: cover;
+  //display: block;
+  background-position: center center;
+  //flex: 1 0 100%;
+  animation:movebg 200s infinite;
+  background-attachment: relative;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+@keyframes movebg {
+
+  0% {
+
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 100% 0;
+  }
+
+  100%{
+    background-position: 0 0;
+  }
+
+
+}
