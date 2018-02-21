@@ -80,7 +80,7 @@ $(document).ready(function(){
 });
 
 function getData() {
-	fetch('/test?q=automotive', myInit).then(function(response) {
+	fetch('/test?q=enterprise/interstateinterstate/category/ce698892-b460-4586-8ad4-0964e18d1ca6', myInit).then(function(response) {
 	  return response.json();
 	}).then(function(sortedData) {
 		console.log(sortedData);
@@ -98,7 +98,7 @@ function getData() {
 
 getData();
 
-const timeOutTime = (60 * 10000);
+const timeOutTime = (60 * 100000);
 
 setTimeout(function doSomething() {
   //$(fetchedStories).replaceWith(getData());
